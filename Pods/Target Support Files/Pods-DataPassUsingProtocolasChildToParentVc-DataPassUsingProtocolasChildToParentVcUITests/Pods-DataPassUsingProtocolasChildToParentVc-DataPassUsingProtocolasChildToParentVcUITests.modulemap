@@ -1,0 +1,6 @@
+framework module Pods_DataPassUsingProtocolasChildToParentVc_DataPassUsingProtocolasChildToParentVcUITests {
+  umbrella header "Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27F5033664EB1D71F2996C37 /* Pods_DataPassUsingProtocolasChildToParentVc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1918D98CB5BE98FBDD0742 /* Pods_DataPassUsingProtocolasChildToParentVc.framework */; };
+		2D95F4E47E7BA502CC69B78D /* Pods_DataPassUsingProtocolasChildToParentVc_DataPassUsingProtocolasChildToParentVcUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983EA7C225EE1BF134F799C0 /* Pods_DataPassUsingProtocolasChildToParentVc_DataPassUsingProtocolasChildToParentVcUITests.framework */; };
+		872462FEB412B3A69CABE76E /* Pods_DataPassUsingProtocolasChildToParentVcTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6733A6D47C1D870C718E9098 /* Pods_DataPassUsingProtocolasChildToParentVcTests.framework */; };
+		AE0AE5FE29D2AB4A00CBC923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE5FD29D2AB4A00CBC923 /* AppDelegate.swift */; };
+		AE0AE60229D2AB4A00CBC923 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE60129D2AB4A00CBC923 /* ViewController.swift */; };
+		AE0AE60729D2AB4C00CBC923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0AE60629D2AB4C00CBC923 /* Assets.xcassets */; };
+		AE0AE60A29D2AB4C00CBC923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0AE60829D2AB4C00CBC923 /* LaunchScreen.storyboard */; };
+		AE0AE61529D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE61429D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests.swift */; };
+		AE0AE61F29D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE61E29D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests.swift */; };
+		AE0AE62129D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE62029D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITestsLaunchTests.swift */; };
+		AE0AE62F29D2AB8600CBC923 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE62D29D2AB8600CBC923 /* MainViewController.swift */; };
+		AE0AE63029D2AB8600CBC923 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0AE62E29D2AB8600CBC923 /* MainViewController.xib */; };
+		AE0AE63329D2AC2700CBC923 /* NewspapersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE63129D2AC2700CBC923 /* NewspapersViewController.swift */; };
+		AE0AE63429D2AC2700CBC923 /* NewspapersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0AE63229D2AC2700CBC923 /* NewspapersViewController.xib */; };
+		AE0AE63829D2AC5C00CBC923 /* NewsPaperTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE63629D2AC5C00CBC923 /* NewsPaperTVC.swift */; };
+		AE0AE63929D2AC5C00CBC923 /* NewsPaperTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0AE63729D2AC5C00CBC923 /* NewsPaperTVC.xib */; };
+		AE0AE63D29D2AC9100CBC923 /* NewsPaperDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE63B29D2AC9100CBC923 /* NewsPaperDetailsViewController.swift */; };
+		AE0AE63E29D2AC9100CBC923 /* NewsPaperDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0AE63C29D2AC9100CBC923 /* NewsPaperDetailsViewController.xib */; };
+		AE0AE64129D2AD2A00CBC923 /* CuriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE63F29D2AD2A00CBC923 /* CuriesViewController.swift */; };
+		AE0AE64229D2AD2A00CBC923 /* CuriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0AE64029D2AD2A00CBC923 /* CuriesViewController.xib */; };
+		AE0AE64629D2AD5300CBC923 /* CuriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE64429D2AD5300CBC923 /* CuriesTVC.swift */; };
+		AE0AE64729D2AD5300CBC923 /* CuriesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0AE64529D2AD5300CBC923 /* CuriesTVC.xib */; };
+		AE0AE64A29D2AD6E00CBC923 /* CuriesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AE64829D2AD6E00CBC923 /* CuriesDetailsViewController.swift */; };
+		AE0AE64B29D2AD6E00CBC923 /* CuriesDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0AE64929D2AD6E00CBC923 /* CuriesDetailsViewController.xib */; };
+		AEC47DB029D2B75200CAE252 /* NewsPaperDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC47DAF29D2B75200CAE252 /* NewsPaperDataResponse.swift */; };
+		AEC47DB229D2C03900CAE252 /* CuriesDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC47DB129D2C03900CAE252 /* CuriesDataResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE0AE61129D2AB4C00CBC923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0AE5F229D2AB4A00CBC923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0AE5F929D2AB4A00CBC923;
+			remoteInfo = DataPassUsingProtocolasChildToParentVc;
+		};
+		AE0AE61B29D2AB4D00CBC923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0AE5F229D2AB4A00CBC923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0AE5F929D2AB4A00CBC923;
+			remoteInfo = DataPassUsingProtocolasChildToParentVc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		265F795750164CCB05707C2C /* Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests.debug.xcconfig"; path = "Target Support Files/Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests/Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A1918D98CB5BE98FBDD0742 /* Pods_DataPassUsingProtocolasChildToParentVc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataPassUsingProtocolasChildToParentVc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38AF98EAC67ED9422FDE3762 /* Pods-DataPassUsingProtocolasChildToParentVc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataPassUsingProtocolasChildToParentVc.release.xcconfig"; path = "Target Support Files/Pods-DataPassUsingProtocolasChildToParentVc/Pods-DataPassUsingProtocolasChildToParentVc.release.xcconfig"; sourceTree = "<group>"; };
+		6733A6D47C1D870C718E9098 /* Pods_DataPassUsingProtocolasChildToParentVcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataPassUsingProtocolasChildToParentVcTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		968E076C62FD399064F2F211 /* Pods-DataPassUsingProtocolasChildToParentVcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataPassUsingProtocolasChildToParentVcTests.debug.xcconfig"; path = "Target Support Files/Pods-DataPassUsingProtocolasChildToParentVcTests/Pods-DataPassUsingProtocolasChildToParentVcTests.debug.xcconfig"; sourceTree = "<group>"; };
+		983EA7C225EE1BF134F799C0 /* Pods_DataPassUsingProtocolasChildToParentVc_DataPassUsingProtocolasChildToParentVcUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataPassUsingProtocolasChildToParentVc_DataPassUsingProtocolasChildToParentVcUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97A7759F278A32AF946C610 /* Pods-DataPassUsingProtocolasChildToParentVc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataPassUsingProtocolasChildToParentVc.debug.xcconfig"; path = "Target Support Files/Pods-DataPassUsingProtocolasChildToParentVc/Pods-DataPassUsingProtocolasChildToParentVc.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0AE5FA29D2AB4A00CBC923 /* DataPassUsingProtocolasChildToParentVc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataPassUsingProtocolasChildToParentVc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0AE5FD29D2AB4A00CBC923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE0AE60129D2AB4A00CBC923 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE0AE60629D2AB4C00CBC923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0AE60929D2AB4C00CBC923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE0AE60B29D2AB4C00CBC923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0AE61029D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataPassUsingProtocolasChildToParentVcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0AE61429D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPassUsingProtocolasChildToParentVcTests.swift; sourceTree = "<group>"; };
+		AE0AE61A29D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataPassUsingProtocolasChildToParentVcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0AE61E29D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPassUsingProtocolasChildToParentVcUITests.swift; sourceTree = "<group>"; };
+		AE0AE62029D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPassUsingProtocolasChildToParentVcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE0AE62D29D2AB8600CBC923 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AE0AE62E29D2AB8600CBC923 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		AE0AE63129D2AC2700CBC923 /* NewspapersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewspapersViewController.swift; sourceTree = "<group>"; };
+		AE0AE63229D2AC2700CBC923 /* NewspapersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewspapersViewController.xib; sourceTree = "<group>"; };
+		AE0AE63629D2AC5C00CBC923 /* NewsPaperTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPaperTVC.swift; sourceTree = "<group>"; };
+		AE0AE63729D2AC5C00CBC923 /* NewsPaperTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsPaperTVC.xib; sourceTree = "<group>"; };
+		AE0AE63B29D2AC9100CBC923 /* NewsPaperDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPaperDetailsViewController.swift; sourceTree = "<group>"; };
+		AE0AE63C29D2AC9100CBC923 /* NewsPaperDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsPaperDetailsViewController.xib; sourceTree = "<group>"; };
+		AE0AE63F29D2AD2A00CBC923 /* CuriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriesViewController.swift; sourceTree = "<group>"; };
+		AE0AE64029D2AD2A00CBC923 /* CuriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CuriesViewController.xib; sourceTree = "<group>"; };
+		AE0AE64429D2AD5300CBC923 /* CuriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriesTVC.swift; sourceTree = "<group>"; };
+		AE0AE64529D2AD5300CBC923 /* CuriesTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CuriesTVC.xib; sourceTree = "<group>"; };
+		AE0AE64829D2AD6E00CBC923 /* CuriesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriesDetailsViewController.swift; sourceTree = "<group>"; };
+		AE0AE64929D2AD6E00CBC923 /* CuriesDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CuriesDetailsViewController.xib; sourceTree = "<group>"; };
+		AEC47DAF29D2B75200CAE252 /* NewsPaperDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPaperDataResponse.swift; sourceTree = "<group>"; };
+		AEC47DB129D2C03900CAE252 /* CuriesDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriesDataResponse.swift; sourceTree = "<group>"; };
+		F24B00A33C15CDBB81333859 /* Pods-DataPassUsingProtocolasChildToParentVcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataPassUsingProtocolasChildToParentVcTests.release.xcconfig"; path = "Target Support Files/Pods-DataPassUsingProtocolasChildToParentVcTests/Pods-DataPassUsingProtocolasChildToParentVcTests.release.xcconfig"; sourceTree = "<group>"; };
+		F32B9DF1579383E1F834C6A5 /* Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests.release.xcconfig"; path = "Target Support Files/Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests/Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE0AE5F729D2AB4A00CBC923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F5033664EB1D71F2996C37 /* Pods_DataPassUsingProtocolasChildToParentVc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0AE60D29D2AB4C00CBC923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				872462FEB412B3A69CABE76E /* Pods_DataPassUsingProtocolasChildToParentVcTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0AE61729D2AB4D00CBC923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D95F4E47E7BA502CC69B78D /* Pods_DataPassUsingProtocolasChildToParentVc_DataPassUsingProtocolasChildToParentVcUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85A05B6B32FE571CDDD04E2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A1918D98CB5BE98FBDD0742 /* Pods_DataPassUsingProtocolasChildToParentVc.framework */,
+				983EA7C225EE1BF134F799C0 /* Pods_DataPassUsingProtocolasChildToParentVc_DataPassUsingProtocolasChildToParentVcUITests.framework */,
+				6733A6D47C1D870C718E9098 /* Pods_DataPassUsingProtocolasChildToParentVcTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE0AE5F129D2AB4A00CBC923 = {
+			isa = PBXGroup;
+			children = (
+				AE0AE5FC29D2AB4A00CBC923 /* DataPassUsingProtocolasChildToParentVc */,
+				AE0AE61329D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests */,
+				AE0AE61D29D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests */,
+				AE0AE5FB29D2AB4A00CBC923 /* Products */,
+				C117EDF3F46453305A5186CA /* Pods */,
+				85A05B6B32FE571CDDD04E2C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE0AE5FB29D2AB4A00CBC923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE0AE5FA29D2AB4A00CBC923 /* DataPassUsingProtocolasChildToParentVc.app */,
+				AE0AE61029D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests.xctest */,
+				AE0AE61A29D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE0AE5FC29D2AB4A00CBC923 /* DataPassUsingProtocolasChildToParentVc */ = {
+			isa = PBXGroup;
+			children = (
+				AE0AE5FD29D2AB4A00CBC923 /* AppDelegate.swift */,
+				AE0AE60129D2AB4A00CBC923 /* ViewController.swift */,
+				AE0AE60629D2AB4C00CBC923 /* Assets.xcassets */,
+				AE0AE60829D2AB4C00CBC923 /* LaunchScreen.storyboard */,
+				AE0AE60B29D2AB4C00CBC923 /* Info.plist */,
+				AE0AE63529D2AC3300CBC923 /* Controllers */,
+			);
+			path = DataPassUsingProtocolasChildToParentVc;
+			sourceTree = "<group>";
+		};
+		AE0AE61329D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE0AE61429D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests.swift */,
+			);
+			path = DataPassUsingProtocolasChildToParentVcTests;
+			sourceTree = "<group>";
+		};
+		AE0AE61D29D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE0AE61E29D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests.swift */,
+				AE0AE62029D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITestsLaunchTests.swift */,
+			);
+			path = DataPassUsingProtocolasChildToParentVcUITests;
+			sourceTree = "<group>";
+		};
+		AE0AE63529D2AC3300CBC923 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE0AE62D29D2AB8600CBC923 /* MainViewController.swift */,
+				AE0AE62E29D2AB8600CBC923 /* MainViewController.xib */,
+				AE0AE63A29D2AC6800CBC923 /* Newspapaer */,
+				AE0AE64329D2AD3500CBC923 /* Curies */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE0AE63A29D2AC6800CBC923 /* Newspapaer */ = {
+			isa = PBXGroup;
+			children = (
+				AEC47DAF29D2B75200CAE252 /* NewsPaperDataResponse.swift */,
+				AE0AE63129D2AC2700CBC923 /* NewspapersViewController.swift */,
+				AE0AE63229D2AC2700CBC923 /* NewspapersViewController.xib */,
+				AE0AE63629D2AC5C00CBC923 /* NewsPaperTVC.swift */,
+				AE0AE63729D2AC5C00CBC923 /* NewsPaperTVC.xib */,
+				AE0AE63B29D2AC9100CBC923 /* NewsPaperDetailsViewController.swift */,
+				AE0AE63C29D2AC9100CBC923 /* NewsPaperDetailsViewController.xib */,
+			);
+			path = Newspapaer;
+			sourceTree = "<group>";
+		};
+		AE0AE64329D2AD3500CBC923 /* Curies */ = {
+			isa = PBXGroup;
+			children = (
+				AEC47DB129D2C03900CAE252 /* CuriesDataResponse.swift */,
+				AE0AE63F29D2AD2A00CBC923 /* CuriesViewController.swift */,
+				AE0AE64029D2AD2A00CBC923 /* CuriesViewController.xib */,
+				AE0AE64429D2AD5300CBC923 /* CuriesTVC.swift */,
+				AE0AE64529D2AD5300CBC923 /* CuriesTVC.xib */,
+				AE0AE64829D2AD6E00CBC923 /* CuriesDetailsViewController.swift */,
+				AE0AE64929D2AD6E00CBC923 /* CuriesDetailsViewController.xib */,
+			);
+			path = Curies;
+			sourceTree = "<group>";
+		};
+		C117EDF3F46453305A5186CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A97A7759F278A32AF946C610 /* Pods-DataPassUsingProtocolasChildToParentVc.debug.xcconfig */,
+				38AF98EAC67ED9422FDE3762 /* Pods-DataPassUsingProtocolasChildToParentVc.release.xcconfig */,
+				265F795750164CCB05707C2C /* Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests.debug.xcconfig */,
+				F32B9DF1579383E1F834C6A5 /* Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests.release.xcconfig */,
+				968E076C62FD399064F2F211 /* Pods-DataPassUsingProtocolasChildToParentVcTests.debug.xcconfig */,
+				F24B00A33C15CDBB81333859 /* Pods-DataPassUsingProtocolasChildToParentVcTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE0AE5F929D2AB4A00CBC923 /* DataPassUsingProtocolasChildToParentVc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0AE62429D2AB4D00CBC923 /* Build configuration list for PBXNativeTarget "DataPassUsingProtocolasChildToParentVc" */;
+			buildPhases = (
+				B3C5AA6ABFDD63C6C0D89963 /* [CP] Check Pods Manifest.lock */,
+				AE0AE5F629D2AB4A00CBC923 /* Sources */,
+				AE0AE5F729D2AB4A00CBC923 /* Frameworks */,
+				AE0AE5F829D2AB4A00CBC923 /* Resources */,
+				061F6DE1C9DD3114D602887D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataPassUsingProtocolasChildToParentVc;
+			productName = DataPassUsingProtocolasChildToParentVc;
+			productReference = AE0AE5FA29D2AB4A00CBC923 /* DataPassUsingProtocolasChildToParentVc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE0AE60F29D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0AE62729D2AB4D00CBC923 /* Build configuration list for PBXNativeTarget "DataPassUsingProtocolasChildToParentVcTests" */;
+			buildPhases = (
+				EC4FE92E28D9DF214925E6ED /* [CP] Check Pods Manifest.lock */,
+				AE0AE60C29D2AB4C00CBC923 /* Sources */,
+				AE0AE60D29D2AB4C00CBC923 /* Frameworks */,
+				AE0AE60E29D2AB4C00CBC923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0AE61229D2AB4C00CBC923 /* PBXTargetDependency */,
+			);
+			name = DataPassUsingProtocolasChildToParentVcTests;
+			productName = DataPassUsingProtocolasChildToParentVcTests;
+			productReference = AE0AE61029D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE0AE61929D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0AE62A29D2AB4D00CBC923 /* Build configuration list for PBXNativeTarget "DataPassUsingProtocolasChildToParentVcUITests" */;
+			buildPhases = (
+				32F7E3B33ADDBA6FAAC3AB6C /* [CP] Check Pods Manifest.lock */,
+				AE0AE61629D2AB4D00CBC923 /* Sources */,
+				AE0AE61729D2AB4D00CBC923 /* Frameworks */,
+				AE0AE61829D2AB4D00CBC923 /* Resources */,
+				9F3F09BF9A910B41CB3F4658 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0AE61C29D2AB4D00CBC923 /* PBXTargetDependency */,
+			);
+			name = DataPassUsingProtocolasChildToParentVcUITests;
+			productName = DataPassUsingProtocolasChildToParentVcUITests;
+			productReference = AE0AE61A29D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE0AE5F229D2AB4A00CBC923 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AE0AE5F929D2AB4A00CBC923 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					AE0AE60F29D2AB4C00CBC923 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AE0AE5F929D2AB4A00CBC923;
+					};
+					AE0AE61929D2AB4D00CBC923 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AE0AE5F929D2AB4A00CBC923;
+					};
+				};
+			};
+			buildConfigurationList = AE0AE5F529D2AB4A00CBC923 /* Build configuration list for PBXProject "DataPassUsingProtocolasChildToParentVc" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE0AE5F129D2AB4A00CBC923;
+			productRefGroup = AE0AE5FB29D2AB4A00CBC923 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE0AE5F929D2AB4A00CBC923 /* DataPassUsingProtocolasChildToParentVc */,
+				AE0AE60F29D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests */,
+				AE0AE61929D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE0AE5F829D2AB4A00CBC923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0AE60A29D2AB4C00CBC923 /* LaunchScreen.storyboard in Resources */,
+				AE0AE60729D2AB4C00CBC923 /* Assets.xcassets in Resources */,
+				AE0AE64229D2AD2A00CBC923 /* CuriesViewController.xib in Resources */,
+				AE0AE64B29D2AD6E00CBC923 /* CuriesDetailsViewController.xib in Resources */,
+				AE0AE63429D2AC2700CBC923 /* NewspapersViewController.xib in Resources */,
+				AE0AE64729D2AD5300CBC923 /* CuriesTVC.xib in Resources */,
+				AE0AE63E29D2AC9100CBC923 /* NewsPaperDetailsViewController.xib in Resources */,
+				AE0AE63029D2AB8600CBC923 /* MainViewController.xib in Resources */,
+				AE0AE63929D2AC5C00CBC923 /* NewsPaperTVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0AE60E29D2AB4C00CBC923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0AE61829D2AB4D00CBC923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		061F6DE1C9DD3114D602887D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DataPassUsingProtocolasChildToParentVc/Pods-DataPassUsingProtocolasChildToParentVc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DataPassUsingProtocolasChildToParentVc/Pods-DataPassUsingProtocolasChildToParentVc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DataPassUsingProtocolasChildToParentVc/Pods-DataPassUsingProtocolasChildToParentVc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32F7E3B33ADDBA6FAAC3AB6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F3F09BF9A910B41CB3F4658 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests/Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests/Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests/Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C5AA6ABFDD63C6C0D89963 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataPassUsingProtocolasChildToParentVc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4FE92E28D9DF214925E6ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataPassUsingProtocolasChildToParentVcTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE0AE5F629D2AB4A00CBC923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0AE63329D2AC2700CBC923 /* NewspapersViewController.swift in Sources */,
+				AE0AE64A29D2AD6E00CBC923 /* CuriesDetailsViewController.swift in Sources */,
+				AE0AE62F29D2AB8600CBC923 /* MainViewController.swift in Sources */,
+				AE0AE64629D2AD5300CBC923 /* CuriesTVC.swift in Sources */,
+				AE0AE60229D2AB4A00CBC923 /* ViewController.swift in Sources */,
+				AE0AE64129D2AD2A00CBC923 /* CuriesViewController.swift in Sources */,
+				AE0AE63D29D2AC9100CBC923 /* NewsPaperDetailsViewController.swift in Sources */,
+				AE0AE5FE29D2AB4A00CBC923 /* AppDelegate.swift in Sources */,
+				AEC47DB029D2B75200CAE252 /* NewsPaperDataResponse.swift in Sources */,
+				AEC47DB229D2C03900CAE252 /* CuriesDataResponse.swift in Sources */,
+				AE0AE63829D2AC5C00CBC923 /* NewsPaperTVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0AE60C29D2AB4C00CBC923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0AE61529D2AB4C00CBC923 /* DataPassUsingProtocolasChildToParentVcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0AE61629D2AB4D00CBC923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0AE61F29D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITests.swift in Sources */,
+				AE0AE62129D2AB4D00CBC923 /* DataPassUsingProtocolasChildToParentVcUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE0AE61229D2AB4C00CBC923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0AE5F929D2AB4A00CBC923 /* DataPassUsingProtocolasChildToParentVc */;
+			targetProxy = AE0AE61129D2AB4C00CBC923 /* PBXContainerItemProxy */;
+		};
+		AE0AE61C29D2AB4D00CBC923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0AE5F929D2AB4A00CBC923 /* DataPassUsingProtocolasChildToParentVc */;
+			targetProxy = AE0AE61B29D2AB4D00CBC923 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE0AE60829D2AB4C00CBC923 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0AE60929D2AB4C00CBC923 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE0AE62229D2AB4D00CBC923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE0AE62329D2AB4D00CBC923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE0AE62529D2AB4D00CBC923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A97A7759F278A32AF946C610 /* Pods-DataPassUsingProtocolasChildToParentVc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DataPassUsingProtocolasChildToParentVc/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.DataPassUsingProtocolasChildToParentVc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE0AE62629D2AB4D00CBC923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38AF98EAC67ED9422FDE3762 /* Pods-DataPassUsingProtocolasChildToParentVc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DataPassUsingProtocolasChildToParentVc/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.DataPassUsingProtocolasChildToParentVc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE0AE62829D2AB4D00CBC923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968E076C62FD399064F2F211 /* Pods-DataPassUsingProtocolasChildToParentVcTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.DataPassUsingProtocolasChildToParentVcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataPassUsingProtocolasChildToParentVc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DataPassUsingProtocolasChildToParentVc";
+			};
+			name = Debug;
+		};
+		AE0AE62929D2AB4D00CBC923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F24B00A33C15CDBB81333859 /* Pods-DataPassUsingProtocolasChildToParentVcTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.DataPassUsingProtocolasChildToParentVcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataPassUsingProtocolasChildToParentVc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DataPassUsingProtocolasChildToParentVc";
+			};
+			name = Release;
+		};
+		AE0AE62B29D2AB4D00CBC923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 265F795750164CCB05707C2C /* Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.DataPassUsingProtocolasChildToParentVcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DataPassUsingProtocolasChildToParentVc;
+			};
+			name = Debug;
+		};
+		AE0AE62C29D2AB4D00CBC923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F32B9DF1579383E1F834C6A5 /* Pods-DataPassUsingProtocolasChildToParentVc-DataPassUsingProtocolasChildToParentVcUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobofilia.DataPassUsingProtocolasChildToParentVcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DataPassUsingProtocolasChildToParentVc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE0AE5F529D2AB4A00CBC923 /* Build configuration list for PBXProject "DataPassUsingProtocolasChildToParentVc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0AE62229D2AB4D00CBC923 /* Debug */,
+				AE0AE62329D2AB4D00CBC923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0AE62429D2AB4D00CBC923 /* Build configuration list for PBXNativeTarget "DataPassUsingProtocolasChildToParentVc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0AE62529D2AB4D00CBC923 /* Debug */,
+				AE0AE62629D2AB4D00CBC923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0AE62729D2AB4D00CBC923 /* Build configuration list for PBXNativeTarget "DataPassUsingProtocolasChildToParentVcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0AE62829D2AB4D00CBC923 /* Debug */,
+				AE0AE62929D2AB4D00CBC923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0AE62A29D2AB4D00CBC923 /* Build configuration list for PBXNativeTarget "DataPassUsingProtocolasChildToParentVcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0AE62B29D2AB4D00CBC923 /* Debug */,
+				AE0AE62C29D2AB4D00CBC923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE0AE5F229D2AB4A00CBC923 /* Project object */;
+}
